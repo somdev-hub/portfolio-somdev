@@ -17,8 +17,15 @@ module.exports = {
         marriweather: ["Marriweather", "serif"],
         outfit: ["Outfit", "sans-serif"],
         "dm-serif": ["DM Serif Display", "serif"],
-        "glacial-indifference-regular": ["Glacial Indifference Regular", "sans-serif"],
-        "glacial-indifference-bold": ["Glacial Indifference Bold", "sans-serif"],
+        "glacial-indifference-regular": [
+          "Glacial Indifference Regular",
+          "sans-serif"
+        ],
+        "glacial-indifference-bold": [
+          "Glacial Indifference Bold",
+          "sans-serif"
+        ],
+        "poiret-one": ["Poiret One", "sans-serif"]
       },
       colors: {
         pink: "#FFC5C5",

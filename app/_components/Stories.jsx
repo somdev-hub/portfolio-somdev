@@ -28,8 +28,8 @@ const Stories = () => {
     }
   ];
   return (
-    <div className="my-[5rem] mx-[7.5rem]">
-      <div className="flex justify-between">
+    <div className="my-[5rem] mx-4 lg:mx-[7.5rem]">
+      <div className="flex flex-col md:flex-row justify-between">
         <div className="flex flex-1 flex-col">
           <h3 className=" text-[1.6rem] font-roboto font-[500]">Read out </h3>
           <h3 className=" text-[2.3rem] font-glacial-indifference-bold font-[700] leading-[normal]">
@@ -47,11 +47,11 @@ const Stories = () => {
           </p>
         </div>
       </div>
-      <div className="mt-[5rem] flex gap-16 justify-center">
+      <div className="mt-[5rem] flex flex-col md:flex-row gap-16 justify-center">
         {stories.map((story, i) => {
           return (
             <div
-              className="flex flex-col flex-1 rounded-lg hover:border-solid hover:border-2 p-4 box-border"
+              className="flex flex-col flex-1 rounded-lg hover:border-solid hover:border-2 md:p-4 box-border"
               key={i}
             >
               <img

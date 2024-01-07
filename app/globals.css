@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&family=Outfit:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 @font-face {
   font-family: "Glacial Indifference Regular";
@@ -34,3 +35,38 @@ body {
   background: #fffbf5;
 }
 
+/* This will affect the whole page */
+* {
+  /* Width */
+  scrollbar-width: thin;
+
+  /* Track */
+  scrollbar-color: transparent transparent;
+}
+
+/* Handle */
+*::-webkit-scrollbar {
+  width: 7px;
+  /* border-radius: 100%; */
+  /* height: 25px; */
+}
+
+*::-webkit-scrollbar-track {
+  background: #33186b;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #ffc5c5;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #c499f3;
+}
+
+.swiper-pagination {
+  /* margin-top: 5rem !important; */
+  display: none;
+}

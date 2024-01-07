@@ -9,8 +9,8 @@ SwiperCore.use([Navigation]);
 const ProjectsSlides = () => {
   const swiperRef = useRef(null);
   return (
-    <div className="mt-[5rem] bg-navy px-[7.5rem]rem rounded-[1rem] py-[3rem]">
-      <div className="px-[6rem] flex justify-between">
+    <div className="mt-[5rem] bg-navy px-4 lg:px-[7.5rem]rem rounded-[1rem] py-[3rem]">
+      <div className="md:px-[6rem] flex flex-col md:flex-row justify-between">
         <div className="flex flex-col flex-1">
           <h3 className="text-purple text-[1.6rem] font-roboto font-[500]">
             Explore{" "}
@@ -32,10 +32,10 @@ const ProjectsSlides = () => {
           </button>
         </div>
       </div>
-      <div className="mt-12 px-12 rounded-[2rem]">
+      <div className="mt-12  md:px-12 rounded-[2rem]">
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
-          spaceBetween={30}
+          spaceBetween={50}
           slidesPerView={1}
           centeredSlides={true}
           className="mySwiper"
@@ -47,15 +47,13 @@ const ProjectsSlides = () => {
           {Array.from({ length: 5 }, (_, i) => {
             return (
               <SwiperSlide key={i}>
-                <div className="h-[67vh] w-[70vw] bg-[url('https://img.freepik.com/premium-photo/japan-national-symbol-sightseeing-mount-fuji-representative-landmark-beautiful-mountain_916211-257625.jpg')] rounded-[2rem] bg-cover relative mx-auto">
-                  <div className="absolute bg-pink p-4 rounded-xl w-[50%] bottom-[10%] left-[5%] shadow-lg">
-                    <p className="font-[500] font-glacial-indifference-regular text-[1.125rem]">
+                <div className="h-[65vh] md:h-[67vh] w-[90vw] md:w-[70vw] bg-[url('https://img.freepik.com/premium-photo/japan-national-symbol-sightseeing-mount-fuji-representative-landmark-beautiful-mountain_916211-257625.jpg')] rounded-[2rem] bg-cover relative mx-auto">
+                  <div className="absolute bg-pink p-4 rounded-xl md:w-[50%] bottom-[15%] md:bottom-[10%] left-[5%] right-[5%] md:right-0 shadow-lg">
+                    <p className="font-[500] font-glacial-indifference-regular text-[0.9rem] md:text-[1.125rem]">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Repellat neque tempora nesciunt distinctio, ducimus
                       veritatis obcaecati consectetur quas rerum? Fugiat quas id
-                      maxime dolores adipisci, a modi? Minima, esse minus? Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit.
-                      Consequuntur, itaque.
+                      maxime dolores adipisci,
                     </p>
                   </div>
                 </div>
@@ -64,7 +62,7 @@ const ProjectsSlides = () => {
           })}
         </Swiper>
       </div>
-      <div className="mt-10 ml-[5rem] flex gap-4">
+      <div className="mt-10 ml-0 md:ml-[5rem] flex md:justify-start justify-center gap-4">
         <button
           className="group p-3 rounded-full bg-white hover:bg-purple swiper-button-prev"
           onClick={() => swiperRef.current && swiperRef.current.slidePrev()}

@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactNow = () => {
   return (
-    <div className="mt-[5rem] bg-purple rounded-xl p-[3rem] w-[60vw] mx-auto text-center">
+    <div className="mt-[5rem] bg-purple rounded-xl px-3 py-6 md:p-[3rem] mx-4 md:w-[60vw] md:mx-auto text-center">
       <h2 className="font-[700] text-[2.3rem] font-glacial-indifference-bold">
         <span className="font-[500] font-marriweather m-0 leading-[normal]">
           Got some work{" "}
@@ -22,7 +22,6 @@ const ContactNow = () => {
           Schedule a call
         </button>
       </div>
-      
     </div>
   );
 };

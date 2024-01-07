@@ -4,9 +4,9 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="mt-[5rem] bg-navy rounded-t-[2rem] pt-[5rem]">
-      <div className="flex justify-between px-[7.5rem] ">
+      <div className="flex flex-col md:flex-row  justify-between px-6 lg:px-[7.5rem] ">
         <div className="flex flex-1"></div>
-        <div className="flex gap-12 flex-1">
+        <div className="flex flex-wrap gap-12 flex-1">
           <ul className="text-white">
             <li className="font-outfit font-[600] text-[1.2rem]">DOCUMENTS</li>
             <li className="font-[500] font-glacial-indifference-regular my-5">
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       {/* <hr /> */}
-      <div className="mx-[7.5rem] mt-10 flex justify-between">
+      <div className="mx-6 lg:mx-[7.5rem] mt-10 flex flex-col md:flex-row justify-between">
         <div className="flex flex-col flex-1">
           <h3 className="text-white mb-4 text-outfit font-[600] text-[1.2rem]">
             Subscribe to my newsletter
